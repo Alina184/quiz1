@@ -3,7 +3,7 @@ from random import randint
 
 db_name = 'quiz.sqlite'
 conn = None
-cursor = None
+cursor = None 
 
 def open():
     global conn, cursor
