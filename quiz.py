@@ -88,9 +88,10 @@ app = Flask(__name__, template_folder=folder, static_folder=folder)
 app.add_url_rule('/', 'index', index, methods=['post', 'get'])   # создаёт правило для URL '/'
 app.add_url_rule('/test', 'test', test, methods=['post', 'get']) # создаёт правило для URL '/test'
 app.add_url_rule('/result', 'result', result) # создаёт правило для URL '/test'
-# Устанавливаем ключ шифрования:
+# Устанавливаем ключ шифрования: 
 app.config['SECRET_KEY'] = 'ThisIsSecretSecretSecretLife'
 
 if __name__ == "__main__":
     # Запускаем веб-сервер:
-    app.run()
+    app.run() 
+ 
